@@ -1,0 +1,35 @@
+# Build output.
+/vmimage
+/vmimage-bin
+.build/
+
+# Images pulled, cloned or converted while trying things out here. The
+# store itself lives outside the repository ($VERTEX_VMIMAGE_ROOT, or the
+# user's data directory), and cmd/check makes its fixtures as it runs.
+/*.raw
+/*.img
+/*.qcow2
+/*.vmdk
+/*.vhdx
+/*.iso
+/*.zip
+/*.xz
+/*.gz
+/*.zst
+*.partial
+/images/
+/clones/
+
+# Scratch output of checks and tools.
+/tmp/
+*.log
+
+# Local environment variables and secrets.
+.env
+*.env
+
+# Editors and the OS.
+.DS_Store
+.vscode/
+.idea/
+*.swp
